@@ -28,3 +28,14 @@ enum Numeration {one = 1, second, third}
 enum List {first = 1, second = 'second'} // number or string or nothing
 const firstItem: List = List.first; // 1
 const secondItem: List = List.second; // 'second'
+
+
+
+
+
+//                              ***Any***
+let anyType: any = 'Everything'; // string
+anyType = true; // boolean
+anyType = 15; // number
+anyType = null; /// null
+// etc.
