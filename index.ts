@@ -1,7 +1,6 @@
 const boolean: boolean | Boolean = true;
 const number: number | Number = 1;
 const string: string | String = 'string';
-const object: object | Object = new Function() || [] || {} // etc.
 const Null: null = null;
 const Undefined: undefined = undefined;
 const symbol: Symbol = Symbol('Symbol');
@@ -88,6 +87,24 @@ function fail() {
 function InfiniteLoopV2(): never {
   while (true) {}
 }
+//                              ***End***                              \\
+
+
+
+//                              ***Object***                              \\
+const object: object = new Function() || new Array() || {} // etc.
+
+declare function create(o: object | null): void;
+
+// create({ prop: 0 }) - works 
+// create(null) - works
+
+// create(42) - error
+// create("string") - error
+
+
+//                              ***End***                              \\
+
 
 
 
