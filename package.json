@@ -7,5 +7,5 @@
     "start": "tsc --watch index.ts"
   },
   "author": "wind-of",
-  "license": "ISC",
+  "license": "ISC"
 }
