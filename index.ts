@@ -55,3 +55,10 @@ const {first, second, third}: {first: number, second: number, third: number} = {
 const [smth, anothersmth]: string[] = ['string', 'string'];
 const [tupleSmth, tupleAnother]: [string, number] = ['string', 61];
 // etc\
+
+
+
+
+const playground: Object = {
+  IsWindowOpen: false
+};
