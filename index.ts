@@ -7,17 +7,18 @@ const Undefined: undefined = undefined;
 const symbol: Symbol = Symbol('Symbol');
 
 
-//                              ***Tuple***
+//                              ***Tuple***                              \\
 const tupleType: [string, number, boolean, boolean, number] = ['string', 15, true, false, 7];
 /* 
   The order matters:
   [15, 'string',  true, false, 7] - throws an error
 */
+//                              ***End***                              \\
 
 
 
 
-//                              ***Enum***
+//                              ***Enum***                              \\
 enum Color {red, blue, green}
 const redColor: Color = Color.red; // 0
 const blueColor: Color = Color.blue; // 1
@@ -34,20 +35,25 @@ enum Numeration {one = 1, two, three}
 const one: Numeration = Numeration.one; // 1
 const two: Numeration = Numeration.two; // 2
 const three: Numeration = Numeration.three; // 3
+//                              ***End***                              \\
 
 
 
 
 
-//                              ***Any***
+//                              ***Any***                              \\
 let anyType: any = 'Everything'; // string
 anyType = true; // boolean
 anyType = 15; // number
 anyType = null; /// null
 // etc.
+//                              ***End***                              \\
 
 
-//                              ***Void*** 
+
+
+
+//                              ***Void***                              \\
 const VoudVariable: void = undefined || null;
 
 // If function doesn't return anything (except for null and undefined), it has a void type
@@ -62,20 +68,29 @@ function ReturnNullOrUndefined(): void {
   // ...or simply
   return
 }
+//                              ***End***                              \\
 
 
-//                              ***Destructurization*** 
+
+
+
+
+
+
+
+//                              ***Destructurization***                              \\ 
 enum Something {first, second, third};
 const {first, second, third}: {first: number, second: number, third: number} = {...Something}
+
 const [smth, anothersmth]: string[] = ['string', 'string'];
 const [tupleSmth, tupleAnother]: [string, number] = ['string', 61];
-// etc\
+// etc.
+//                              ***End***                              \\
 
 
 
 
 //                              ***Generic**
-
 // The use of --strictNullChecks are preferable.
 // Without this flag the following is possible:
 
@@ -83,9 +98,11 @@ let someString: string = 'I am a string';
 someString = null;
 someString = undefined;
 
+//                              ***End***                              \\
 
-//
 
+
+// Playground variables
 const playground: Object = {
   IsWindowOpen: false
 };
