@@ -74,6 +74,18 @@ const [tupleSmth, tupleAnother]: [string, number] = ['string', 61];
 
 
 
+//                              ***Generic**
+
+// The use of --strictNullChecks are preferable.
+// Without this flag the following is possible:
+
+let someString: string = 'I am a string';
+someString = null;
+someString = undefined;
+
+
+//
+
 const playground: Object = {
   IsWindowOpen: false
 };
