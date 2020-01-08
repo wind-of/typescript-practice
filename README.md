@@ -9,5 +9,5 @@ You only need to have typescript installed globally
 
   #### Running
 
-  `tsc scripts/script.name.ts`
-  `node scripts/script.name.js`
+  `tsc dir/script.name.ts`
+  `node dir/script.name.js`
