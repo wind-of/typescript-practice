@@ -9,4 +9,5 @@ You only need to have typescript installed globally
 
   #### Running
 
-  `npm run start`
+  `tsc scripts/script.name.ts`
+  `node scripts/script.name.js`
